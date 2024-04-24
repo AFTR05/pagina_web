@@ -4,36 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explorando Libros</title>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- Plantilla de bootswatch -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" class="cambio_color" id="nav_principal">
+        <!-- Logo -->
+        <button class="button-with-image" id="boton_logo" onclick="cambiarColor()">
+            <img src="images/Remove-bg.ai_1713990645182.png" alt="Botón" id="logo">
+        </button>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="libros.html">Libros
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="anime.html">Animes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Título principal -->
-    <h1>Explorando Libros</h1>
+    <div class="informacion">
+        <h1>Explorando Libros</h1>
 
-    <!-- Primer libro: Los Hombres Invisibles -->
-    <h3>Los Hombres Invisibles</h3>
-    <p>Escrito por <strong>Mario Mendoza</strong>, esta novela es un relato de aventuras que nos sumerge en la naturaleza tropical americana. El protagonista, Gerardo, es abandonado por su esposa poco antes de perder a sus padres. Hundido, decide comenzar de cero y buscar el rastro de una tribu misteriosa llamada "los hombres invisibles". Estos son los últimos indígenas de América que aún no han tenido contacto con la civilización.</p>
-    <p>En su búsqueda, Gerardo se adentra en la selva, donde encuentra la senda del amor y la fraternidad. Inspirado por el pintor Paul Gauguin, se pierde entre los árboles y descubre que la verdadera salvación está en los demás.</p>
-    <p>La prosa de Mario Mendoza nos transporta a un mundo lleno de esperanza y reflexión, lejos de los escenarios urbanos de sus obras anteriores.</p>
-    <p>¡Sumérgete en esta fascinante historia y descubre los secretos de los hombres invisibles!</p>
+        <!-- Primer libro: Los Hombres Invisibles -->
+        <h3>Los Hombres Invisibles</h3>
+        <img  class="imagen_libro" src="images/Remove-bg.ai_1713993651122.png">
+        <p class="parrafo">Escrito por <strong>Mario Mendoza</strong>, esta novela es un relato de aventuras que nos sumerge en la naturaleza tropical americana. El protagonista, Gerardo, es abandonado por su esposa poco antes de perder a sus padres. Hundido, decide comenzar de cero y buscar el rastro de una tribu misteriosa llamada "los hombres invisibles". Estos son los últimos indígenas de América que aún no han tenido contacto con la civilización.
+        En su búsqueda, Gerardo se adentra en la selva, donde encuentra la senda del amor y la fraternidad. Inspirado por el pintor Paul Gauguin, se pierde entre los árboles y descubre que la verdadera salvación está en los demás.
+        La prosa de Mario Mendoza nos transporta a un mundo lleno de esperanza y reflexión, lejos de los escenarios urbanos de sus obras anteriores.
+        ¡Sumérgete en esta fascinante historia y descubre los secretos de los hombres invisibles!</p>
 
-    <!-- Segundo libro: Amor Líquido -->
-    <h3>Amor Líquido</h3>
-    <p>Escrito por el sociólogo <strong>Zygmunt Bauman</strong>, este libro explora las relaciones sentimentales en la sociedad posmoderna. El concepto de "amor líquido" se refiere a la superficialidad de los vínculos humanos y la fragilidad de las raíces emocionales que establecemos.</p>
-    <p>Bauman sostiene que el objetivo de este tipo de amor es mantenerse en constante cambio sin ataduras. No solo se aplica a las relaciones con los demás, sino también a la liquidez del amor hacia nosotros mismos. En la búsqueda de parejas, a menudo descuidamos la necesidad de aceptarnos y amarnos profundamente antes de poder amar a otros de manera significativa.</p>
-    <p>Las características del amor líquido incluyen la falta de compromiso, la necesidad de libertad, la satisfacción inmediata y la fragilidad de las relaciones. En esta cultura individualista, el amor se ha vuelto mercantilizado y a menudo deja una sensación de vacío.</p>
-    <p>Sumérgete en las reflexiones de Bauman sobre el amor en la sociedad contemporánea y descubre cómo navegar por las aguas turbulentas del amor líquido.</p>
+        <!-- Segundo libro: Amor Líquido -->
+        <h3>Amor Líquido</h3>
+        <img class="imagen_libro" src="images/Remove-bg.ai_1713993585441.png    ">
+        <p class="parrafo">Escrito por el sociólogo <strong>Zygmunt Bauman</strong>, este libro explora las relaciones sentimentales en la sociedad posmoderna. El concepto de "amor líquido" se refiere a la superficialidad de los vínculos humanos y la fragilidad de las raíces emocionales que establecemos.
+        Bauman sostiene que el objetivo de este tipo de amor es mantenerse en constante cambio sin ataduras. No solo se aplica a las relaciones con los demás, sino también a la liquidez del amor hacia nosotros mismos. En la búsqueda de parejas, a menudo descuidamos la necesidad de aceptarnos y amarnos profundamente antes de poder amar a otros de manera significativa.
+        Las características del amor líquido incluyen la falta de compromiso, la necesidad de libertad, la satisfacción inmediata y la fragilidad de las relaciones. En esta cultura individualista, el amor se ha vuelto mercantilizado y a menudo deja una sensación de vacío.
+        Sumérgete en las reflexiones de Bauman sobre el amor en la sociedad contemporánea y descubre cómo navegar por las aguas turbulentas del amor líquido.</p>
 
-    <!-- Tercer libro: Sapiens: De animales a dioses -->
-    <h3>Sapiens: De animales a dioses</h3>
-    <p>Escrito por el historiador israelí <strong>Yuval Noah Harari</strong>, este libro traza una breve historia de la humanidad, explorando desde los primeros humanos que caminaron sobre la Tierra hasta los radicales avances de las tres grandes revoluciones que nuestra especie ha protagonizado:</p>
-    <ol>
-        <li>Revolución cognitiva: El surgimiento de la conciencia y la capacidad de cooperar flexiblemente en grandes grupos.</li>
-        <li>Revolución agrícola: El cambio hacia la agricultura, que multiplicó la población humana pero también trajo desafíos.</li>
-        <li>Revolución científica: Los avances científicos y tecnológicos que han transformado nuestra sociedad.</li>
-    </ol>
-    <p>El argumento central de Harari es que <em>Homo sapiens</em> domina el mundo debido a su capacidad única para creer en entidades imaginarias, como los dioses, las naciones, el dinero o los derechos humanos. Estas ficciones son la base de todos los sistemas de cooperación humana a gran escala, incluyendo religiones, estructuras políticas y redes comerciales.</p>
-    <p>Sumérgete en las reflexiones de Harari sobre nuestra historia y cómo las ficciones han dado forma a nuestra civilización. ¡Una lectura fascinante para reflexionar sobre nuestra existencia!</p>
+        <!-- Tercer libro: Sapiens: De animales a dioses -->
+        <h3>Sapiens: De animales a dioses</h3>
+        <img class="imagen_libro" src="images/ac8ea53ec2e38d62ece0ee3cb06821fe.jpg">
+        <p class="parrafo_p">Escrito por el historiador israelí <strong>Yuval Noah Harari</strong>, este libro traza una breve historia de la humanidad, explorando desde los primeros humanos que caminaron sobre la Tierra hasta los radicales avances de las tres grandes revoluciones que nuestra especie ha protagonizado:</p>
+        <ol>
+            <li>Revolución cognitiva: El surgimiento de la conciencia y la capacidad de cooperar flexiblemente en grandes grupos.</li>
+            <li>Revolución agrícola: El cambio hacia la agricultura, que multiplicó la población humana pero también trajo desafíos.</li>
+            <li>Revolución científica: Los avances científicos y tecnológicos que han transformado nuestra sociedad.</li>
+        </ol>
+        <p class="parrafo_p">El argumento central de Harari es que los Homo sapiens dominan el mundo debido a su capacidad única para creer en entidades imaginarias, como los dioses, las naciones, el dinero o los derechos humanos. Estas ficciones son la base de todos los sistemas de cooperación humana a gran escala, incluyendo religiones, estructuras políticas y redes comerciales.
+        Sumérgete en las reflexiones de Harari sobre nuestra historia y cómo las ficciones han dado forma a nuestra civilización. ¡Una lectura fascinante para reflexionar sobre nuestra existencia!</p>
+        
+    </div>
+    <footer class="bg-primary" class="cambio_color">
+        <div >
+            <p>Derechos de autor</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

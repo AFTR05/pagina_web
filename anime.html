@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link href="css/styles.css" rel="stylesheet">
-    <title>Buenas</title>
+    
+    <title>Pagina web</title>
 </head>
 <body>
-    <h1> Shingeki no Kiojin </h1>
-    <img src="images/shingeki-no-kyojin-mikasa-ackerman-papel-pintado-17840_w635.jpg" height="380">
-    <br>
-    <h1> La historia se desarrolla en un mundo ficticio en el que la humanidad está al borde de la extinción a 
-        causa de unas criaturas humanoides llamadas «titanes», lo que obliga a los sobrevivientes a refugiarse en tres enormes murallas que impiden el acceso a dichos monstruos </h1>
-    <br> 
-    <img src="images/Wallpaper-Attack-On-Titans-Wallpaper-Shingeki-No-Kyojin9.jpg" height="380" >
-    <body></body>
-    <p>si quieres saber mas sobre este animo dirigete a la pagina</p>
-   <a href="https://shingeki-no-kyojin.fandom.com/es/wiki/Shingeki_no_Kyojin_Wiki">https://shingeki-no-kyojin.fandom.com/es/wiki/Shingeki_no_Kyojin_Wiki</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="nav_principal" class="cambio_color">
+        <button class="button-with-image" id="boton_logo"  onclick="cambiarColor()">
+            <img src="images/Remove-bg.ai_1713990645182.png" alt="Botón" id="logo" >
+        </button>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="libros.html">Libros
+                            
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="anime.html">Animes
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="informacion">
+        <h1> Explorando de animes </h1>
+        <h3> Shingeki no Kiojin </h3>
+        <img class="imagen_anime" src="images/shingeki-no-kyojin-mikasa-ackerman-papel-pintado-17840_w635.jpg">
+        <p class="parrafo"> La historia se desarrolla en un mundo ficticio en el que la humanidad está al borde de la extinción a 
+            causa de unas criaturas humanoides llamadas «titanes», lo que obliga a los sobrevivientes a refugiarse en tres enormes murallas que impiden el acceso a dichos monstruos </p>
+    
+        <h3>Jujutsu Kaisen (JJK)</h3>
+        <img class="imagen_anime" src="images/jujutsu-kaisen-season-2-key-art.png" alt="Portada de Jujutsu Kaisen">
+        <p class="parrafo">"Jujutsu Kaisen" es un manga escrito e ilustrado por Gege Akutami. La historia sigue a Yuji Itadori, un estudiante de secundaria con habilidades atléticas excepcionales, quien se encuentra envuelto en un mundo de maldiciones después de tratar de salvar a sus amigos de un objeto maldito. Ahora, Yuji se une a una organización secreta de hechiceros para combatir y exorcizar maldiciones.
+        El manga ha ganado una gran popularidad por su emocionante trama, personajes carismáticos y batallas épicas.</p>
+        
+        <h3>Chainsaw Man</h3>
+        <img class="imagen_anime" src="images/452645_1285029.jpg" alt="Portada de Chainsaw Man">
+        <p class="parrafo">"Chainsaw Man" es un manga escrito e ilustrado por Tatsuki Fujimoto. La historia sigue a Denji, un joven que trabaja como cazador de demonios para pagar la deuda de su difunto padre. Para ello, Denji se une a un perro demoníaco llamado Pochita, que puede transformarse en una motosierra.
+        El manga es conocido por su estilo oscuro, humor negro y giros inesperados en la trama, convirtiéndolo en uno de los favoritos entre los fans del género.</p>
+        
+    </div>
+    <footer class="bg-primary" class="cambio_color">
+        <div >
+            <p>Derechos de autor</p>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

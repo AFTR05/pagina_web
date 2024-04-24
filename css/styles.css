@@ -1,9 +1,65 @@
+#logo {
+    width: 100px;
+    padding: -82px;
+}
+
+#boton_logo{
+    border: none;
+    background: transparent; 
+    padding: 0; 
+    cursor: pointer; 
+    position: relative;
+    border: none; 
+    display: inline-block; /* Hace que el botón se ajuste automáticamente al tamaño de su contenido */
+    width: fit-content; /* Ajusta el ancho del botón al contenido */
+    height: fit-content; /* Ajusta el alto del botón al contenido */
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+footer{
+    text-align: center;
+    padding: 30px;
+}
+
+footer p{
+    color: white;
+}
+
+.informacion{
+    padding-right: 200px;
+    padding-left: 200px;
+    margin: 100px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen_anime{
+    margin: 40px;
+    width: 600px;
+    align-self: start;
+}
+
+.imagen_libro{
+    margin: 40px;
+    height: 400px;
+    align-self: start;
+}
+
 h1{
-    background-color:aliceblue;
+    margin-bottom: 60px;
 }
-p{
-    background-color: aliceblue;
+
+.parrafo{
+    font-size: 22px;
+    margin-bottom: 60px;
 }
-a{
-    background-color: aliceblue;
+
+.parrafo_p{
+    font-size: 22px;
+}
+
+ol{
+    font-size: 20px;
 }
